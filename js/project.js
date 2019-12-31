@@ -6,7 +6,7 @@ $(() => {
 //玩家一的結果
 $('#P2start').on('click', () => {
     console.log('按到了喔');
-    $('#winning2').empty();
+    $('#P1start').attr('disabled', true)
     var x = [];
     for (i = 0; i < 4; i++) {
         x[i] = Math.floor(Math.random() * 6) + 1;
@@ -114,10 +114,7 @@ $('#P2start').on('click', () => {
 
 $('#P1start').on('click', () => {
     console.log('按到了喔');
-    $('#winning2').empty();
-    $('#output2').empty();
-    $('#dice2').empty();
-    
+
     var x = [];
     for (i = 0; i < 4; i++) {
         x[i] = Math.floor(Math.random() * 6) + 1;
