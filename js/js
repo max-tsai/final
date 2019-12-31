@@ -1,0 +1,51 @@
+ var rollDice = () => {
+    for (i = 0; i < 4; i++) {
+        var x = []
+        x[i] = Math.floor(Math.random() * 6) + 1;
+    }
+ 
+ 
+ 
+            /*
+                var b0 = x[0] == x[1]
+                var b1 = x[1] == x[2]
+                var b2 = x[2] == x[3]
+                var bb = 0
+                var bb = b0 + 2 * b1 + 4 * b2
+
+                if (bb == 1) {
+                    score = x[2] + x[3];
+                    break
+                }
+                if (bb == 2) {
+                    score = x[0] + x[3]
+                    return score;
+
+                    break
+
+                }
+
+                if (bb == 4) {
+                    score = x[0] + x[1]
+                    return score;
+
+                    break
+
+                }
+                if (bb == 5) {
+                    score = x[2] + x[3]
+                    return score;
+
+                    break
+
+                }
+                if (bb == 7) {
+                    var str = "一色" + "  " + x[0];
+                    return str;
+                } else {
+                    var restart = "再試一次！";
+                    return restart;
+                }
+            }
+
+            /*

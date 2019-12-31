@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/project.css">
+    <title>final project</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">十八啦</h1>
+            <hr class="my-4">
+            <p>
+                請按“擲骰子”開始遊戲。如果遇到”再試一次“，請按到有結果出現。
+            </p>
+            <a class="btn btn-primary btn-lg" href="./index.html" role="button">回上頁</a>
+        </div>
+
+        <div class="row">
+            <div class="col-sm">
+                <h1>莊家</h1>
+                <button id="P1start">擲骰子</button>
+                <div class="form-group row">
+                    <label for="data1" class="col-sm-2 col-form-label">骰子</label>
+                    <div class="col-sm-10">
+                        <input type="array" readonly class="form-control-plaintext" id="dice1" placeholder="結果">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class=" col-sm-2 col-form-label ">result</label>
+                    <div class="col-sm-10 ">
+                        <input type="number " readonly class="form-control-plaintext " id="output1" placeholder="牌型 ">
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="col-sm">
+                <h1>玩家1</h1>
+                <button id="P2start">擲骰子</button>
+                <div class="form-group row">
+                    <label for="data2" class="col-sm-2 col-form-label">骰子</label>
+                    <div class="col-sm-10">
+                        <input type="array" readonly class="form-control-plaintext" id="dice2" placeholder="骰子">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class=" col-sm-2 col-form-label ">result</label>
+                    <div class="col-sm-10 ">
+                        <input type="number " readonly class="form-control-plaintext " id="output2" placeholder="結果">
+                    </div>
+                </div>
+                <button id="P2win">判斷勝負</button>
+                <div class="form-group row">
+                    <label class=" col-sm-2 col-form-label ">輸贏</label>
+                    <div class="col-sm-10 ">
+                        <input type="number " readonly class="form-control-plaintext " id="winning2" placeholder="勝敗 ">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm ">
+                <h1>玩家2</h1>
+                <button id="P3start">擲骰子</button>
+                <div class="form-group row ">
+                    <label for="data3 " class="col-sm-2 col-form-label ">骰子</label>
+                    <div class="col-sm-10 ">
+                        <input type="number " readonly class="form-control-plaintext " id="dice3" placeholder="骰子 ">
+                    </div>
+                </div>
+                <div class="form-group row ">
+                    <label class=" col-sm-2 col-form-label ">result</label>
+                    <div class="col-sm-10 ">
+                        <input type="number " readonly class="form-control-plaintext " id="output3" placeholder="結果 ">
+                    </div>
+                </div>
+                <button id="P3win">判斷勝負</button>
+                <div class="form-group row ">
+                    <label class=" col-sm-2 col-form-label ">輸贏</label>
+                    <div class="col-sm-10 ">
+                        <input type="number " readonly class="form-control-plaintext " id="winning3" placeholder="勝敗 ">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
+    <script src="./js/project.js "></script>
+</body>
+
+</html>
