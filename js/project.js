@@ -193,10 +193,6 @@ $('#P1start').on('click', () => {
 
 })
 
-//------------------YR--------------------------
-//$("#my_image").attr("src","second.jpg");
-//var ww=1;
-//$("#dice1"+ww).attr('src',"./pic/5.png");
 
 
 function input_pic(dice_array, p) {
