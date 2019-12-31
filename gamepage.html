@@ -16,25 +16,22 @@
             <h1 class="display-4">十八啦</h1>
             <hr class="my-4">
             <p>
-                Step1 : 請按“擲骰子”開始遊戲，就會出現骰子的結果跟數字大小。
-                <br>
-                Step2 : 如果遇到”再試一次“，請按到有結果出現。
+                請按“擲骰子”開始遊戲。如果遇到”再試一次“，請按到有結果出現。
             </p>
             <a class="btn btn-primary btn-lg" href="./index.html" role="button">回上頁</a>
         </div>
 
         <div class="row">
-            <div class="col-sm">
-                <h1>莊家</h1>
-                <button id="P1start">擲骰子</button>
+            <div class="col">
+                <button id="P1start">開始遊戲</button>
                 <div class="form-group row">
-                    <label for="data1" class="col-sm-2 col-form-label">骰子</label>
+                    <label for="data1" class="col-sm-2 col-form-label">莊家骰子</label>
                     <div class="col-sm-10">
                         <input type="array" readonly class="form-control-plaintext" id="dice1" placeholder="結果">
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label class=" col-sm-2 col-form-label ">result</label>
+                    <label class=" col-sm-2 col-form-label ">骰子大小</label>
                     <div class="col-sm-10 ">
                         <input type="number " readonly class="form-control-plaintext " id="output1" placeholder="牌型 ">
                     </div>
@@ -43,8 +40,8 @@
             </div>
 
 
-            <div class="col-sm">
-                <h1>玩家1</h1>
+            <div class="col">
+                <h1>玩家</h1>
                 <button id="P2start">擲骰子</button>
                 <div class="form-group row">
                     <label for="data2" class="col-sm-2 col-form-label">骰子</label>
@@ -58,7 +55,6 @@
                         <input type="number " readonly class="form-control-plaintext " id="output2" placeholder="結果">
                     </div>
                 </div>
-                <button id="P2win">判斷勝負</button>
                 <div class="form-group row">
                     <label class=" col-sm-2 col-form-label ">輸贏</label>
                     <div class="col-sm-10 ">
@@ -67,29 +63,7 @@
                 </div>
             </div>
 
-            <div class="col-sm ">
-                <h1>玩家2</h1>
-                <button id="P3start">擲骰子</button>
-                <div class="form-group row ">
-                    <label for="data3 " class="col-sm-2 col-form-label ">骰子</label>
-                    <div class="col-sm-10 ">
-                        <input type="number " readonly class="form-control-plaintext " id="dice3" placeholder="骰子 ">
-                    </div>
-                </div>
-                <div class="form-group row ">
-                    <label class=" col-sm-2 col-form-label ">result</label>
-                    <div class="col-sm-10 ">
-                        <input type="number " readonly class="form-control-plaintext " id="output3" placeholder="結果 ">
-                    </div>
-                </div>
-                <button id="P3win">判斷勝負</button>
-                <div class="form-group row ">
-                    <label class=" col-sm-2 col-form-label ">輸贏</label>
-                    <div class="col-sm-10 ">
-                        <input type="number " readonly class="form-control-plaintext " id="winning3" placeholder="勝敗 ">
-                    </div>
-                </div>
-            </div>
+
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
