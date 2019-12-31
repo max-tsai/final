@@ -4,13 +4,3 @@
     background: blue;
     color: yellow;
 }
-
-#winning2,
-#winning3,
-{
-    color: red;
-}
-
-body {
-    background-image: url(./pic/background1);
-}

@@ -3,6 +3,8 @@ $(() => {
     console.log('JS 正常執行')
 })
 
+
+
 //玩家一的結果
 $('#P2start').on('click', () => {
     console.log('按到了喔');
@@ -14,6 +16,7 @@ $('#P2start').on('click', () => {
 
     console.log(x);
     $('#dice2').val(x);
+    input_pic(x, "1"); //YR
     x.sort();
     var b0 = x[0] == x[1];
     var b1 = x[1] == x[2];
@@ -122,6 +125,7 @@ $('#P1start').on('click', () => {
 
     console.log(x);
     $('#dice1').val(x);
+    input_pic(x, "0"); //YR
     x.sort();
     var b0 = x[0] == x[1];
     var b1 = x[1] == x[2];
@@ -188,3 +192,40 @@ $('#P1start').on('click', () => {
 
 
 })
+
+//------------------YR--------------------------
+//$("#my_image").attr("src","second.jpg");
+//var ww=1;
+//$("#dice1"+ww).attr('src',"./pic/5.png");
+
+
+function input_pic(dice_array, p) {
+    for (i = 0; i < dice_array.length; i++) {
+        var temp = dice_array[i];
+        $("#dice" + p + i).attr('src', show_pic(temp));
+    }
+}
+
+function show_pic(x) {
+    var src = "./pic/0.png";
+
+    if (x == 1) {
+        src = "./pic/1.png";
+    }
+    if (x == 2) {
+        src = "./pic/2.png";
+    }
+    if (x == 3) {
+        src = "./pic/3.png";
+    }
+    if (x == 4) {
+        src = "./pic/4.png";
+    }
+    if (x == 5) {
+        src = "./pic/5.png";
+    }
+    if (x == 6) {
+        src = "./pic/6.png";
+    }
+    return src;
+}
